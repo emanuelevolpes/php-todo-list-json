@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,19 +16,21 @@
     <!-- /axios -->
     <title>PHP ToDo List JSON</title>
 </head>
+
 <body>
-    <div id="app">
-        <div class="container">
-            <h1>ToDo</h1>
-            <ul>
-                <li v-for="todo in todos">
-                    <p>{{ todo.text }}</p>
-                </li>
-            </ul>
-        </div>
+    <div id="app" class="container">
+        <h1>ToDo</h1>
+        <ul>
+            <li v-for="todo in todos">
+                <p>{{ todo.text }}</p>
+            </li>
+            <input type="text" v-model="newToDo">
+            <button @click.prevent="addToDo">Inserisci</button>
+        </ul>
     </div>
     <!-- myjs -->
     <script src="main.js"></script>
     <!-- /myjs -->
 </body>
+
 </html>
