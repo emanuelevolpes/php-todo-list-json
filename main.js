@@ -10,7 +10,7 @@ createApp({
         .get('server.php')
         .then((response) => {
             console.log(response);
-            this.todos = response.data
+            this.todos = response.data;
         })
     }
 }).mount('#app')

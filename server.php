@@ -6,15 +6,15 @@ $todo = file_get_contents('todo.json');
 
 $todo = json_decode($todo, true);
 
-var_dump($todo);
+// var_dump($todo);
 
-// $todo = json_encode($todo);
+$todo = json_encode($todo);
 
 // $todo[0]['text'] = 'ciao';
 
 //var_dump($todo);
 
-// echo $todo;
+echo $todo;
 
 // file_put_contents('todo.json', $todo);
 
