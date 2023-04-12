@@ -8,3 +8,36 @@ Reset
     margin: 0;
     box-sizing: border-box;
 }
+
+/*
+--------
+Main
+--------
+*/
+.container {
+    padding: 1.25rem;
+    margin: 3.125rem;
+    border-radius: .625rem;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 13.375rem;
+    border: .0625rem solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: .3125rem;
+}
+
+.button-newtodo {
+    background-color: dodgerblue;
+    padding: .3125rem;
+    border: .0625rem solid black;
+    border-left: 0rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
